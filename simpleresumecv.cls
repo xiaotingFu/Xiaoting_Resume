@@ -72,10 +72,10 @@
 
 % Geometry package for page margins.
 \RequirePackage[
-left=0.50in,
-right=0.50in,
-top=0.60in,
-bottom=0.45in,
+left=0.45in,
+right=0.45in,
+top=0.50in,
+bottom=0.3in,
 nohead,
 includefoot]{geometry}
 
@@ -169,12 +169,12 @@ BoldItalicFont=FreeSerifBoldItalic]
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{9.2pt}{10.5pt}\selectfont}
-\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{25pt}{30.6pt}\selectfont\bfseries}
+\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{9pt}{10.6pt}\selectfont}
+\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{20pt}{22.6pt}\selectfont\bfseries}
 \newcommand{\UseSubTitleFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
-\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{10pt}{12pt}\selectfont\bfseries}
-\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{9.6pt}{11.3pt}\selectfont\bfseries}
-\newcommand{\UseDetailFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
+\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{10.5pt}{12pt}\selectfont\bfseries}
+\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{10.5pt}{12pt}\selectfont\bfseries}
+\newcommand{\UseDetailFont}{\normalfont\fontsize{10.5pt}{12pt}\selectfont}
 
 % Symbols (unicode).
 \newcommand{\BulletSymbol}{{\normalfont\fontsize{7.5}{8.8}\selectfont\raisebox{0.17em}{\char"25A0}}}
@@ -188,7 +188,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 \ifnum\TypesetInDraftMode=0
 \newcommand{\HeaderText}{}
-\newcommand{\FooterText}{\hfill\PageKOfN\hfill}
+% \newcommand{\FooterText}{\hfill\PageKOfN\hfill}
+\newcommand{\FooterText}{}
 \else
 \newcommand{\HeaderText}{}
 \newcommand{\FooterText}{\null\hphantom{\DraftStamp}\hfill%
@@ -206,7 +207,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Paragraph style.
 \setlength{\parindent}{0in} % No indentation at the beginning of each paragraph.
-\setlength{\parskip}{0in} % No vertical space between paragraphs.
+\setlength{\parskip}{0.1in} % No vertical space between paragraphs.
 
 % Avoid bad page breaks within paragraphs.
 \widowpenalties 1 10000

@@ -1,287 +1,285 @@
-% !TEX TS-program = xelatex
-% !TEX encoding = UTF-8 Unicode
-% -*- coding: UTF-8; -*-
-% vim: set fenc=utf-8
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% SIMPLE-RESUME-CV
-%% <https://github.com/zachscrivena/simple-resume-cv>
-%% This is free and unencumbered software released into the
-%% public domain; see <http://unlicense.org> for details.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % See "README.md" for instructions on compiling this document.
-\usepackage{multicol}
+% \usepackage{multicol}
 \documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
-% Class options:
-% a4paper, letterpaper, nonstopmode, draftmode
-% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% PREAMBLE.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% CV Info (to be customized).
-\newcommand{\CVAuthor}{Xiaoting Fu}
-\newcommand{\CVTitle}{Specialized in Machine learning and Speech Recoginition. Looking for SE related positions.}
-
-
-% PDF settings and properties.
-\hypersetup{
-pdftitle={\CVTitle},
-pdfauthor={\CVAuthor},
-pdfsubject={\CVWebpage},
-pdfcreator={XeLaTeX},
-pdfproducer={},
-pdfkeywords={},
-unicode=true,
-bookmarks=true,
-bookmarksopen=true,
-pdfstartview=FitH,
-pdfpagelayout=OneColumn,
-pdfpagemode=UseOutlines,
-hidelinks,
-breaklinks}
-
-% Shorthand.
-\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
-\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ACTUAL DOCUMENT.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
-
-%%%%%%%%%%%%%%%
-% TITLE BLOCK %
-%%%%%%%%%%%%%%%
-
-\Title{\CVAuthor}
-
-\begin{SubTitle}
-{3133A Kings Ct, Raleigh, 27606, NC, USA}
-\par
-\href{mailto:xfu7@ncsu.edu}
-{xfu7@ncsu.edu}
-\,\SubBulletSymbol\,
-+1\,(919)\,884-0552
-\
-\end{SubTitle}
-\begin{Body}
-
-%%%%%%%%%%%%
-%% OBJECTIVES&SUMMARY %%
-%%%%%%%%%%%%
-
-\Section
-{Objectives}
-{Objectives}
-{PDF:Objectives}
-
-\Entry
-Specialized in Machine learning and Speech Recognition. Looking for SE related positions
-%%%%%%%%%%%%%%%
-%% EDUCATION %%
-%%%%%%%%%%%%%%%
-
-\Section
-{Education}
-{Education}
-{PDF:Education}
-
-\Entry
-\href{http://www.ncsu.edu}
-{\textbf{Ph.D. in \href{https://www.csc.ncsu.edu/}
-{Computer Science}: North Carolina State University (NCSU)}}, Raleigh, NC
-\hfill
-\DatestampYM{2017}{08} --
-Present
-%\Gap
-\BulletItem
-Cumulative GPA: 3.7 / 4.0, Expected Graduation: \DatestampYM{2021}{05}
-\BigGap
-
-\Entry
-\href{http://www.wku.edu.cn}
-{\textbf{B.S. in
-\href{http://www.cs.wku.edu.cn}
-{Computer Science}: Wenzhou-Kean University (WKU)}}, Zhejiang, China
-\hfill
-\DatestampYMD{2013}{09}{01} --
-\DatestampYMD{2017}{06}{01}
-
-%\Gap
-\BulletItem
-Cumulative GPA: 3.9 / 4.0 (Graduated with College Honors)
-
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
-
-\Section
-{Skills and Interests}
-{Skills and Interests}
-{PDF:Skills}
-
-\Entry
-\textbf{Languages:} Python, Shell, Java, CSharp, SQL, JavaScript, C++, PHP \hfill  \textbf{Speech Recognition:} Kaldi, CMU Sphinx
-
-\textbf{Gesture Recognition:} Kinect, Leap Motion \hfill \textbf{OS \& Container:}  Unix OS, Windows, Docker
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% PROFESSIONAL EXPERIENCE %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\Section
-{Professional Experience}
-{Professional Experience}
-{PDF:ProfessionalExperience}
-
-\Entry
-{\textbf{Software Engineer Intern | ABB | Raleigh, NC}}
-\hfill
-\DatestampYM{2018}{05} --
-\DatestampYM{2018}{08}
-\BulletItem
-Worked on ABB GridView Project. The project aimed to 1) provide an user interface for database interaction of energy simulation 2) provide tools for users to visualize energy marketing data
-\BulletItem
-My contributions includes: 1) Developed tools to convert between different databases (SQLite and MS Access DB). 2) Programmed tools to compare two databases, review comparison results and merge databases. 3) Designed visual interfaces for the SQLite database editing. 4) Implemented a SQL Parser for generating SQL action queries based on composite display queries.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%% PROJECTS %%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\Section
-{Selected Projects}
-{Selected Projects}
-{PDF:Projects}
-\Entry
-{\textbf{FLECKS Project | ArgLab, NCSU} \hfill Jan 2018 - Present}
-\textbf{Develop Virtual Learning Companion for Kids to Learn Computer Science}
-\begin{Detail}
-
-\BulletItem
-The project aimed at developing a virtual learning companion for kids to learn computer science.
-Deployed the RedHat server environment for Web Hosting and automate the deployment with yaml and docker containers
-\BulletItem
-Integrated the Kaldi Real-time Speech-to-text service to the web application and wrap it into a docker container
-\end{Detail}
-
-\Entry
-{\textbf{Automatic Speech Recognition (ASR) for Children}}
-\begin{Detail}
-\BulletItem
-Developed an ASR engine using Kaldi with GMM-HMM as acoustic model and Librispeech corpus as language model
-\BulletItem
-Transcribed children's speech at word level, following the latest speech annotation standard
-\BulletItem
-Compared accuracy of existing open-source speech recognition toolkits on children speech corpus including Kaldi and CMU Sphinx
-\BulletItem
-Conducted speech quality analysis measuring speech-to-noise ratio and word-error-rate of automatic machine recognition
-\BulletItem
-Summarized the latest methods for improving the accuracy of the children's ASR
-\BulletItem
-Evaluated acoustic model adaptation and feature extraction methods on small children's dataset using adult dataset
-\end{Detail}
-
-\Entry
-{\textbf{Spoken-CALL Challenge}}
-\begin{Detail}
-\BulletItem
-
-\end{Detail}
-
-% \Entry
-% \Gap
-% \textbf{Electronic Medical Record (EMR) System Development | WKU } \hfill
-% \DatestampYM{2016}{01} --
-% \DatestampYM{2016}{10}
-
-% \begin{Detail}
-% \BulletItem
-% Assisted research advisor with composing the research proposal and applying for funding
-% \BulletItem
-% Analyzed the usage of EMR system in Chinese small-scale clinics
-% \BulletItem
-% Evaluated the efficacy of a frequent set mining algorithm in retrieving clinical record data
-% \end{Detail}
-\textbf{Technology-Based Social Intervention for Children with ASD | WKU } \hfill
-\DatestampYM{2015}{04} --
-\DatestampYM{2016}{06}
-
-\begin{Detail}
-\BulletItem
-Conducted background research on accessibility of Technology-Based Intervention (TBI) for Chinese children with autism
-\BulletItem
-Designed the website of WKU Autism Network
-\BulletItem
-Composed and edited the research booklet: Autism Advocate
-\BulletItem
-Developed a Leap-Motion Drawing application for social skill intervention
-\end{Detail}
-
-% %%%%%%%%%%%%%%%%%%
-% %% PUBLICATIONS %%
-% %%%%%%%%%%%%%%%%%%
-
-% \Section
-% {Publications}
-% {Publications}
-% {PDF:Publications}
-
-% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
-% \begingroup
-% \renewcommand{\MaxNumberedItem}{[8888]}
-
-% \Gap
-% \BulletItem{Lijun Pan*, \underline{Xiaoting Fu*}, Fangfang Cai, Yu Meng, Changjiang Zhang,
-% ``A Compact Electronic Medical Record System for Regional Clinics and Health Centers in China: Design and Its Application,''
-% in \textit{Proceedings of 2016 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
-% Shenzhen, Guangdong, China,
-% \DatestampYM{2016}{12}.} (pp. 1015-1020). (* co-first authorship)
-
-% \Gap
-
-% \BulletItem{Lijun Pan*, \underline{Xiaoting Fu*}, Fangfang Cai, Yu Meng, Changjiang Zhang,
-% ``Design a Novel Electronic Medical Record System for Regional Clinics and Health Centers in China,''
-% in \textit{In Proceedings of 2016 2nd IEEE International Conference on Computer and Communications (ICCC)},
-% Chengdu, Sichuan, China,
-% \DatestampYM{2016}{10}.}(pp. 38-41). (* co-first authorship)
-
-% \endgroup
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% AWARDS & SCHOLARSHIPS %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\Section
-{Awards \&\newline
-Scholarships}
-{Awards \& Scholarships}
-{PDF:AwardsAndScholarships}
-
-
-
-\BulletItem
-Outstanding University Graduate, Zhejiang Province
-\hfill
-\DatestampY{2017}
-\BulletItem
-Dean's List,
-Fall 2013 through Spring 2017,
-College of Natural Science
-\hfill
-\DatestampY{2013} --
-\DatestampY{2017}
-
-\Gap
-\BulletItem
-Microsoft Kinect Hackathon,
-Third Class, Microsoft, Beijing, China
-\hfill
-\DatestampY{2014}
-\end{Body}
-\end{document}
+    % Class options:
+    % a4paper, letterpaper, nonstopmode, draftmode
+    % MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% PREAMBLE.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % CV Info (to be customized).
+    \newcommand{\CVAuthor}{Xiaoting Fu}
+    \newcommand{\CVTitle}
+    {Specialized in Spoken Language Processing (SLP) with Machine Learning. 
+    Looking for SLP/NLP or SE related internship.}
+    % PDF settings and properties.
+    \hypersetup{
+    pdftitle={\CVTitle},
+    pdfauthor={\CVAuthor},
+    pdfsubject={\CVWebpage},
+    pdfcreator={XeLaTeX},
+    pdfproducer={},
+    pdfkeywords={},
+    unicode=true,
+    bookmarks=true,
+    bookmarksopen=true,
+    pdfstartview=FitH,
+    pdfpagelayout=OneColumn,
+    pdfpagemode=UseOutlines,
+    hidelinks,
+    breaklinks}
+    
+    % Shorthand.
+    \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+    \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% ACTUAL DOCUMENT.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    
+    %%%%%%%%%%%%%%%
+    % TITLE BLOCK %
+    %%%%%%%%%%%%%%%
+    
+    \Title{\CVAuthor}
+    
+    \begin{SubTitle}
+    {3133A Kings Ct, Raleigh, NC, 27606}
+    \par
+    \href{mailto:xfu7@ncsu.edu}
+    {xfu7@ncsu.edu}
+    \,\SubBulletSymbol\,
+    +1\,(919)\,884-0552
+    \
+    \end{SubTitle}
+    
+    \begin{Body}
+    %%%%%%%%%%%%
+    %% OBJECTIVES&SUMMARY %%
+    %%%%%%%%%%%%
+    
+    \Section
+    {Objectives}
+    {Objectives}
+    {PDF:Objectives}
+    
+    \Entry
+    \BulletItem
+    Specialized in Spoken Language Processing (SLP) and Machine Learning. 
+    \BulletItem
+    Looking for SLP/NLP or SE related internship positions.
+    %%%%%%%%%%%%%%%
+    %% EDUCATION %%
+    %%%%%%%%%%%%%%%
+    
+    \Section
+    {Education}
+    {Education}
+    {PDF:Education}
+    
+    \Entry
+    \href{http://www.ncsu.edu}
+    {\textbf{Ph.D. in \href{https://www.csc.ncsu.edu/}
+    {Computer Science}: North Carolina State University (NCSU)}}, Raleigh, NC
+    \hfill
+    \DatestampYM{2017}{08} --
+    Present
+    %\Gap
+    \BulletItem
+    Cumulative GPA: 3.7 / 4.0, Expected Graduation: \DatestampYM{2021}{05}
+    \BigGap
+    
+    \Entry
+    \href{http://www.wku.edu.cn}
+    {\textbf{B.S. in
+    \href{http://www.cs.wku.edu.cn}
+    {Computer Science}: Wenzhou-Kean University (WKU)}}, Zhejiang, China
+    \hfill
+    \DatestampYMD{2013}{09}{01} --
+    \DatestampYMD{2017}{06}{01}
+    
+    %\Gap
+    \BulletItem
+    Cumulative GPA: 3.9 / 4.0 (Graduated with College Honors)
+    
+    %%%%%%%%%%%%
+    %% SKILLS %%
+    %%%%%%%%%%%%
+    
+    \Section
+    {Skills and Interests}
+    {Skills and Interests}
+    {PDF:Skills}
+    
+    \Entry
+    \textbf{Languages:} Python, Shell, Java, CSharp, SQL \hfill  \textbf{Speech Recognition:} Kaldi, CMU Sphinx, DeepSpeech
+    
+    \textbf{Gesture Recognition:} Kinect, Leap Motion \hfill \textbf{OS \& Container:}  Unix OS, Windows, Docker
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% PROFESSIONAL EXPERIENCE %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \Section
+    {Professional Experience}
+    {Professional Experience}
+    {PDF:ProfessionalExperience}
+    
+    \Entry
+    {\textbf{Software Engineer Intern | ABB | Raleigh, NC}}
+    \hfill
+    \DatestampYM{2018}{05} --
+    \DatestampYM{2018}{08}
+    \BulletItem
+    Worked on ABB GridView Project. 
+    Aimed at 1) providing an user interface for database interaction
+    2) visualizing abstract energy marketing data and generate 3) 
+    \BulletItem
+    My contributions include: 
+    1) developed tools to convert between different format of databases (SQLite and MS Access DB). 
+    2) programmed tools for database comparison, changes review and apply changes from one database to another one.
+    3) designed visual interfaces for the SQLite database editing. 
+    4) implemented a SQL Parser for generating SQL action queries based on composite display queries.
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%
+    %% PROJECTS %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%
+    \Section
+    {Selected Projects}
+    {Selected Projects}
+    {PDF:Projects}
+    
+    \Entry
+    \textbf{FLECKS Project | ArgLab, NCSU | Raleigh, NC} \hfill Jan 2018 - Present
+    \begin{Detail}
+        \Entry
+        \textbf{Intelligent Agent Prototyping}
+        \BulletItem
+        Aimed at developing a virtual learning companion for kids learning computer programming.
+        \BulletItem
+        My contributions include: 
+        1) deployed the RHEL server for web hosting with Docker Container.
+        2) coded the website to stream audio using Socket.io.
+        3) integrated the Kaldi toolkit as a web service.
+        
+        \Entry
+        \textbf{Continueous Speech Recognition for Children}
+        \BulletItem
+        Aimed at building an Automatic Speech Recognition (ASR) engine to recognize continuous children speech.
+        \BulletItem
+        My contributions include: 
+        1) \textbf{Audio Analysis:} evaluated audio quality using signal-to-noise ratio and visualize the results.
+        2) \textbf{Transcription Processing:} applied forced alignment to get the timestamps of the human generated transcriptions.
+        3) \textbf{Acoustic and Language Model Training:} used Kaldi nnet3 to train an acoustic model with for 40 hours of children's speech and use Librispeech corpus to train the language model.
+        4) \textbf{Toolkits Comparison:} compared word-error-rate (WER) of the existing open-source speech recognition toolkits on children speech corpus including Kaldi and CMU Sphinx.
+        5) \textbf{Model Improvement:} applied speaker adaptation, vocal tract length normalization (VTLN) to improve the existing models.
+    \end{Detail}
+    
+    \Gap
+    \Entry
+    \textbf{Spoken Language Assessment for ESL Learner | NCSU} \hfill Sept 2018 - Present (Ongoing  Project)
+    \begin{Detail}
+        \BulletItem
+        Aimed at building an automatic spoken language assessment system based on the grammatical and semantical correctness of speech responses.
+        \BulletItem
+        My contributions include: 
+        1) trained an ASR engine with 9,000+ utterances from ESL learners along with 1,000+ hours external speech.
+        2) applied pitch normalization and speech adaptation techniques to reduce differences between different models.
+        3) trained a supervised neural network classifier on the output transcription for response quality assessment.
+    \end{Detail}
+    
+    % \Entry
+    % \Gap
+    % \textbf{Electronic Medical Record (EMR) System Development | WKU } \hfill
+    % \DatestampYM{2016}{01} --
+    % \DatestampYM{2016}{10}
+    
+    % \begin{Detail}
+    % \BulletItem
+    % Assisted research advisor with composing the research proposal and applying for funding
+    % \BulletItem
+    % Analyzed the usage of EMR system in Chinese small-scale clinics
+    % \BulletItem
+    % Evaluated the efficacy of a frequent set mining algorithm in retrieving clinical record data
+    % \end{Detail}
+    \Gap
+    \Entry
+    \textbf{Social Intervention for Children with Autism Spectrum Disorder (ASD) | WKU } \hfill \DatestampYM{2015}{04} --\DatestampYM{2016}{06}
+    \begin{Detail}
+        \BulletItem
+        Aimed at building an educational game for children with ASR and also increase the awareness of the ASD.
+        \BulletItem
+        My contributions include: 1) conducted background research on accessibility of Technology-Based Intervention (TBI) for Chinese children with ASD.
+        2) designed the website of WKU Autism Network.
+        3) composed and edited the research booklet: Autism Advocate to increase people's understanding of ASD.
+        4) programmed a Leap Motion touchless drawing application for social skill intervention.
+    \end{Detail}
+    
+    % %%%%%%%%%%%%%%%%%%
+    % %% PUBLICATIONS %%
+    % %%%%%%%%%%%%%%%%%%
+    
+    % \Section
+    % {Publications}
+    % {Publications}
+    % {PDF:Publications}
+    
+    % % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+    % \begingroup
+    % \renewcommand{\MaxNumberedItem}{[8888]}
+    
+    % \Gap
+    % \BulletItem{Lijun Pan*, \underline{Xiaoting Fu*}, Fangfang Cai, Yu Meng, Changjiang Zhang,
+    % ``A Compact Electronic Medical Record System for Regional Clinics and Health Centers in China: Design and Its Application,''
+    % in \textit{Proceedings of 2016 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+    % Shenzhen, Guangdong, China,
+    % \DatestampYM{2016}{12}.} (pp. 1015-1020). (* co-first authorship)
+    
+    % \Gap
+    
+    % \BulletItem{Lijun Pan*, \underline{Xiaoting Fu*}, Fangfang Cai, Yu Meng, Changjiang Zhang,
+    % ``Design a Novel Electronic Medical Record System for Regional Clinics and Health Centers in China,''
+    % in \textit{In Proceedings of 2016 2nd IEEE International Conference on Computer and Communications (ICCC)},
+    % Chengdu, Sichuan, China,
+    % \DatestampYM{2016}{10}.}(pp. 38-41). (* co-first authorship)
+    
+    % \endgroup
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% AWARDS & SCHOLARSHIPS %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \Section
+    {Awards \&\newline
+    Activities}
+    {Awards \& Activities }
+    {PDF:AwardsAndScholarships}
+    
+    \BulletItem
+    Outstanding University Graduate, Zhejiang Province
+    \hfill
+    \DatestampY{2017}
+    \BulletItem
+    Dean's List,
+    Fall 2013 through Spring 2017,
+    College of Natural Science
+    \hfill
+    \DatestampY{2013} --
+    \DatestampY{2017}
+    
+    \Gap
+    \BulletItem
+    Microsoft Kinect Hackathon,
+    Third Class, Microsoft, Beijing, China
+    \hfill
+    \DatestampY{2014}
+    
+    \end{Body}
+    \end{document}
+    
+    
